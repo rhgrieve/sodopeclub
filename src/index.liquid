@@ -1,0 +1,30 @@
+---
+layout: layouts/base.liquid
+title: so dope ring
+---
+
+{% image "./src/images/sunset.webp", "so dope sunset", 600 %}
+
+<section class="my-8">
+    <h2 class="text-2xl my-2 font-mono text-pink-600">★ members ★</h2>
+    <ul class="">
+        {% for site in sites %}
+        <li>> <a class="text-pink-600 hover:italic hover:tracking-widest" href="{{ site.url }}">{{ site.username }}</a></li>
+        {% endfor %}
+    </ul>
+</section>
+
+<section class="my-8">
+    <h2 class="text-2xl my-2 font-mono text-cyan-600">★ rules ★</h2>
+    <ol class="list-decimal list-inside">
+        {% for rule in site.rules %}
+        <li>{{ rule }}</li>
+        {% endfor %}
+    </ol>
+</section>
+
+
+<section class="my-8">
+    <h2 class="text-2xl my-2 font-mono text-purple-600">★ join us ★</h2>
+    <p>make a <a class="underline text-purple-600 hover:italic hover:tracking-widest" href="/">pull request</a></p>
+</section>

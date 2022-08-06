@@ -1,0 +1,23 @@
+{
+  "name": "sodopeclub",
+  "description": "a webring for so dope guys",
+  "version": "0.0.1",
+  "license": "MIT",
+  "scripts": {
+    "dev": "run-p *:watch",
+    "build": "run-p *:build",
+    "tailwind:watch": "npx tailwindcss -i src/css/main.css -o _site/css/main.css --watch",
+    "tailwind:build": "npx tailwindcss -i src/css/main.css -o _site/css/main.css",
+    "eleventy:watch": "npx @11ty/eleventy --watch --serve",
+    "eleventy:build": "npx @11ty/eleventy"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^1.0.0",
+    "@11ty/eleventy-img": "^2.0.1",
+    "@tailwindcss/typography": "^0.5.2",
+    "autoprefixer": "^10.0.2",
+    "npm-run-all": "^4.1.5",
+    "postcss": "^8.0.9",
+    "tailwindcss": "^3.0.23"
+  }
+}
