@@ -22,7 +22,7 @@ async function imageShortcode(src, alt, sizes) {
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addLiquidShortcode("image", imageShortcode);
-  eleventyConfig.addPassthroughCopy({ "static/js/sodope-nav.js": "widget/sodope-nav.js"});
+  eleventyConfig.addPassthroughCopy({ "static/widget": "widget"});
   return {
     dir: {
       input: "src",
