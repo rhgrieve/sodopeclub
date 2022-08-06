@@ -8,8 +8,8 @@ layout: layouts/base.liquid
     <h2 class="text-2xl my-2 font-mono text-pink-600 before:content-['★_'] after:content-['_★']">members</h2>
     <ul>
         {% for site in sites %}
-        <li class="before:content-['>_']">
-            <a class="text-pink-600 hover:italic hover:tracking-widest" href="{{ site.url }}">{{ site.username }}</a>
+        <li>
+            <a class="text-pink-600 hover:italic hover:tracking-widest before:content-['~'] underline" href="{{ site.url }}">{{ site.username }}</a>
         </li>
         {% endfor %}
     </ul>
