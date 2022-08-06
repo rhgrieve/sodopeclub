@@ -1,12 +1,11 @@
 ---
 layout: layouts/base.liquid
-title: so dope club
 ---
 
 {% image "./src/images/sunset.webp", "so dope sunset", 600 %}
 
 <section class="my-8">
-    <h2 class="text-2xl my-2 font-mono text-pink-600">★ members ★</h2>
+    <h2 class="text-2xl my-2 font-mono text-pink-600 before:content-['★_'] after:content-['_★']">members</h2>
     <ul>
         {% for site in sites %}
         <li class="before:content-['>_']">
@@ -17,7 +16,7 @@ title: so dope club
 </section>
 
 <section class="my-8">
-    <h2 class="text-2xl my-2 font-mono text-cyan-600">★ rules ★</h2>
+    <h2 class="text-2xl my-2 font-mono text-cyan-600 before:content-['★_'] after:content-['_★']">rules</h2>
     <ol class="list-decimal list-inside">
         {% for rule in site.rules %}
         <li>{{ rule }}</li>
@@ -27,6 +26,6 @@ title: so dope club
 
 
 <section class="my-8">
-    <h2 class="text-2xl my-2 font-mono text-purple-600">★ join us ★</h2>
+    <h2 class="text-2xl my-2 font-mono text-purple-600 before:content-['★_'] after:content-['_★']">join us</h2>
     <p>make a <a class="underline text-purple-600 hover:italic hover:tracking-widest" href="https://github.com/rhgrieve/sodopeclub">pull request</a></p>
 </section>
