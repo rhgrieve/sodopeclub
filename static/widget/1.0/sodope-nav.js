@@ -2,6 +2,7 @@ const template = document.createElement('template');
 template.innerHTML = `
 <style>
     #sodope-nav {
+        font-family: Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, monospace; 
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -27,7 +28,6 @@ template.innerHTML = `
     }
 
     #sodope-nav > #nav-links a {
-        font-family: Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, monospace; 
         color: rgb(219, 39, 119);
     }
 
