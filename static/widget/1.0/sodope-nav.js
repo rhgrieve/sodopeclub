@@ -3,6 +3,7 @@ template.innerHTML = `
 <style>
     #sodope-nav {
         font-family: Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, monospace; 
+        background: white;
         display: flex;
         flex-direction: column;
         align-items: center;
