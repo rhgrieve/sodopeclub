@@ -63,9 +63,9 @@ class SoDopeNav extends HTMLElement {
         this.attachShadow({ mode: 'open' });
         window.shadow = this.shadowRoot;
         this.shadowRoot.appendChild(template.content.cloneNode(true));
-        this.shadowRoot.getElementById('prevBtn').href = `https://sodope.club/${username}/prev`;
-        this.shadowRoot.getElementById('randomBtn').href = `https://sodope.club/${username}/random`;
-        this.shadowRoot.getElementById('nextBtn').href = `https://sodope.club/${username}/next`;
+        this.shadowRoot.getElementById('prevBtn').href = `https://sodope.club/api/${username}/prev`;
+        this.shadowRoot.getElementById('randomBtn').href = `https://sodope.club/api/${username}/random`;
+        this.shadowRoot.getElementById('nextBtn').href = `https://sodope.club/api/${username}/next`;
     }
 
     // connectedCallback() { }
