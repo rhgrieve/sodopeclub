@@ -1,23 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    {% if description %}
-    <meta name="description" content="{{ description }}">
-    {% else %}
-    <meta name="description" content="{{ site.description }}">
-    {% endif %}
-    <link rel="stylesheet" href="/css/main.css">
-    <title>★ {{ site.title }} ★</title>
-</head>
-<body class="p-8 text-gray-700">
-    <header class="py-4 border-b">
-        <h1><a href="/" class="text-2xl font-mono text-pink-600 hover:italic hover:tracking-widest before:content-['★_'] after:content-['_★']">{{ site.title }}</a></h1>
-    </header>
-    <main class="py-4">
-        {{ content }}
-    </main>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        {% if description %}
+        <meta name="description" content="{{ description }}">
+        {% else %}
+        <meta name="description" content="{{ site.description }}">
+        {% endif %}
+        <link rel="stylesheet" href="/css/main.css">
+        <title>★ {{ site.title }} ★</title>
+    </head>
+    <body class="p-8 text-gray-700">
+        <header class="py-4 border-b">
+            <h1><a href="/" class="text-2xl font-mono text-pink-600 hover:italic hover:tracking-widest before:content-['★_'] after:content-['_★']">{{ site.title }}</a></h1>
+        </header>
+        <main class="py-4">
+            {{ content }}
+        </main>
+    </body>
 </html>
