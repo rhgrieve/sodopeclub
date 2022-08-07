@@ -62,7 +62,6 @@ class SoDopeNav extends HTMLElement {
         super();
         const username = this.getAttribute('username');
         this.attachShadow({ mode: 'open' });
-        window.shadow = this.shadowRoot;
         this.shadowRoot.appendChild(template.content.cloneNode(true));
         this.shadowRoot.getElementById('prevBtn').href = `https://sodope.club/api/${username}/prev`;
         this.shadowRoot.getElementById('randomBtn').href = `https://sodope.club/api/${username}/random`;
